@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "titleremover",
+  "version": "${version}",
+
+  "name": "Title Remover",
+  "description": "Removes intrusive titles from your screen and puts them in chat.",
+  "authors": [
+    "tierrif"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/tierrif/title-remover"
+  },
+
+  "license": "LGPLv3",
+  "icon": "assets/titleremover/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.tierrif.titleremover.TitleRemoverMod"
+    ]
+  },
+  "mixins": [
+    "titleremover.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.17",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
